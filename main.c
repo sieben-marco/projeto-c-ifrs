@@ -30,24 +30,24 @@ int main(void) {
     printf("Digite o número da coluna: ");
     scanf("%hd", &coluna);
 
-    if (linha == 1 && coluna == 1) {
-      l1c1 = 'o';
-    } else if (linha == 1 && coluna == 2) {
-      l1c2 = 'o';
-    } else if (linha == 1 && coluna == 3) {
-      l1c3 = 'o';
-    } else if (linha == 2 && coluna == 1) {
-      l2c1 = 'o';
-    } else if (linha == 2 && coluna == 2) {
-      l2c2 = 'o';
-    } else if (linha == 2 && coluna == 3) {
-      l2c3 = 'o';
-    } else if (linha == 3 && coluna == 1) {
-      l3c1 = 'o';
-    } else if (linha == 3 && coluna == 2) {
-      l3c2 = 'o';
-    } else if (linha == 3 && coluna == 3) {
-      l3c3 = 'o';
+    if (linha == 1) {
+      switch (coluna) {
+        case 1: l1c1 = 'O'; break;
+        case 2: l1c2 = 'O'; break;
+        case 3: l1c3 = 'O'; break;
+      }
+    } else if (linha == 2) {
+      switch (coluna) {
+        case 1: l2c1 = 'O'; break;
+        case 2: l2c2 = 'O'; break;
+        case 3: l2c3 = 'O'; break;
+      }
+    } else {
+      switch (coluna) {
+        case 1: l3c1 = 'O'; break;
+        case 2: l3c2 = 'O'; break;
+        case 3: l3c3 = 'O'; break;
+      }
     }
 
     //        col1 col2 col3
